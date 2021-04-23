@@ -1,0 +1,36 @@
+{
+  "name": "lista_de_compras",
+  "version": "1.0.0",
+  "description": "Pagina para Listar Compras",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [
+    "compras",
+    "Listacompras",
+    "listado",
+    "supermercado",
+    "compradearticulos"
+  ],
+  "author": "Grupo",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "cross-blob": "^1.2.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.0",
+    "file-saver": "^2.0.2",
+    "mongoose": "^5.7.13",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}

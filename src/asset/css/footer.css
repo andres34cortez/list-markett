@@ -1,0 +1,22 @@
+footer {
+    position: relative;;
+    left:0px;
+    bottom:0px;
+    height:100%;
+    width:100%;
+ 
+    background-color:#1A1A1A;
+ }
+
+.main1 { 
+  display:flex;
+  margin:0 auto;
+}
+
+a img:hover {
+    color: #fff;
+}
+
+body{
+    width: 100%;
+}

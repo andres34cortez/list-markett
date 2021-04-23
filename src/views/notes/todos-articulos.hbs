@@ -1,0 +1,65 @@
+<div class="row">
+    {{#each arts}}
+    <div class="col-md-4">
+        <div class="card text-white bg-info mb-3">
+            <h4 class="card-header " style="text-align: center">
+                {{tipo}}
+            </h4>
+            <div class="card-body">
+                <h5>
+                    <p style="text-align: center">{{descripcion}}</p>
+                    <p style="text-align: center">Cantidad: {{cantidad}}</p>
+                </h5>
+                <a class="btn btn-success btn-block btn.sm" href="/notes/editar/{{_id}}">Editar Artículo <img
+                        src="https://img.icons8.com/color/30/000000/edit.png"></a>
+                <form action="/notes/eliminar/{{_id}}" method="POST">
+                    <br>
+                    <button class="btn btn-danger btn-block btn.sm">Eliminar Artículo <img
+                            src="https://img.icons8.com/dusk/30/000000/delete-forever.png"></button>
+
+                </form>
+
+            </div>
+
+        </div>
+        <br>
+    </div>
+    {{else}}
+    <div class="card text-white bg-info mb-3 mx-auto border border-danger" >
+        <h4 class="card-header " style="text-align: center">
+            Agregar nuevo artículo
+        </h4>
+        <div class="card-body">
+
+            <a href="/notes/nueva-nota" class="btn btn-info btn-block"><img
+                    src="https://img.icons8.com/bubbles/177/000000/plus.png"></a>
+
+        </div>
+    </div>
+    {{/each}}
+    {{#if arts}}
+
+    <div class="col-md-4 ">
+
+        <div class="card text-white bg-info mb-3 border border-warning">
+            <h4 class="card-header " style="text-align: center">
+                Agregar nuevo artículo
+            </h4>
+            <div class="card-body">
+
+                <a href="/notes/nueva-nota" class="btn btn-info btn-block"><img
+                        src="https://img.icons8.com/bubbles/177/000000/plus.png"></a>
+
+            </div>
+
+        </div>
+        <br>
+    </div>
+    {{/if}}
+</div>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>

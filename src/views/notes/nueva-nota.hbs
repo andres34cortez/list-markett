@@ -1,0 +1,35 @@
+
+<div class="col-md-5 mx-auto">
+    <div class="card text-white bg-success mb-3 border border-danger">
+        <div class="card-header">
+             <h3 style="text-align: center">Agregar articulo</h3>
+        </div>
+
+        <div class="card-body">
+            <form action="/notes/nueva-nota" method="POST">
+                <div class="form-group">
+                    <h5>
+                        <input type="radio" name="tipo" class="" id="Limpieza" value="Limpieza " > Art. Limpieza <img src="https://img.icons8.com/color/20/000000/housekeeping.png"><br>
+                        <input type="radio" name="tipo" class=""  id="Bebida" value="Bebida" > Bebida <img src="https://img.icons8.com/emoji/20/000000/tropical-drink.png"><br>
+                        <input type="radio" name="tipo" class=""  id="Comestibles" value="Comestible"> Comestible <img src="https://img.icons8.com/cotton/20/000000/steak-rare--v1.png"><br>
+                        <input type="radio" name="tipo" class=""  id="Otros" value="Otros"> Otros <img src="https://img.icons8.com/doodle/20/000000/lol--v2.png"><br>
+                    </h5>
+                    
+                </div>
+                    <div class="form-group">
+                        <input type="text" name="descripcion" class="form-control" placeholder="Descripcion. Ej: Fanta" value="{{descripcion}}"> 
+                        <br>
+                        <input type="text" name="cantidad" class="form-control" placeholder="Cantidad" value="{{cantidad}}"> <br>
+                        <button class="btn btn-primary btn-block" type="submit" >Guardar</button> 
+                    </div>
+            </form>
+        </div>
+    </div>    
+</div>    
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+    
